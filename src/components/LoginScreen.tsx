@@ -240,13 +240,13 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
           </button>
         </form>
 
-        <div className="text-center mt-6 pt-5 border-t border-slate-150">
+       {/*<div className="text-center mt-6 pt-5 border-t border-slate-150">
           <p className="text-xs text-slate-400 font-medium">الرمز السري الافتراضي للاختبار:</p>
           <div className="flex justify-center gap-4 mt-2">
             <span className="text-xs bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600 font-bold">المدير: <code className="font-mono text-emerald-600">1234</code></span>
             <span className="text-xs bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600 font-bold">الموظف: <code className="font-mono text-emerald-600">4321</code></span>
           </div>
-        </div>
+        </div>*/}
       </div>
     </div>
   );
