@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  direction: rtl;
+  text-align: right;
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* تخصيص شريط التمرير لمظهر ناعم واحترافي */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* للطباعة - دعم كشف حساب تفصيلي */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body, html, #root {
+    background-color: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  /* إلغاء الأعمدة الجانبية لتتكيف كشوف الحسابات كلياً مع عرض الصفحة */
+  .grid {
+    display: block !important;
+  }
+  .lg\:col-span-2 {
+    width: 100% !important;
+  }
+  .max-w-7xl {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background-color: white !important;
+  }
+  /* معايير خاصة بعرض الفلكس والجريد المصمم للطباعة */
+  .print\:flex {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .print\:grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+  /* تلوين وضبط جداول الحسابات الورقية */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 1rem !important;
+  }
+  th, td {
+    border: 1px solid #94a3b8 !important; /* حدود داكنة وواضحة للورق */
+    color: black !important;
+    padding: 8px 12px !important;
+  }
+  th {
+    background-color: #f1f5f9 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

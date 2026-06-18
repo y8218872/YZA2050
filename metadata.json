@@ -1,0 +1,6 @@
+{
+  "name": "حساباتي لإدارة الذمم والعمليات المالية",
+  "description": "نظام ويب متكامل ومبسط لإدارة الحسابات والذمم بنظام القيد المزدوج، مع تتبع العمليات، صلاحيات الموظفين، وسجلات الرقابة الأمنية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
